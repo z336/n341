@@ -1,0 +1,19 @@
+/*
+ Title: Multi-writes
+ Author: Jon Coleman
+ Purpose: Multi-writes
+ Created on: 05/14/2017
+*/
+
+body {
+	background-color: #7AA9CA;
+	font-size: larger;
+}
+
+#first {
+	font-family: sans-serif;
+}
+
+#second {
+	color: #90251B;
+}

@@ -1,0 +1,25 @@
+/*
+ Title: Sails
+ Author: Jon Coleman
+ Purpose: CSS for IDed & Styled
+ Created on: 5/10/2017
+*/
+
+body {
+	background-color: #7AA9CA;
+	font-size: larger;
+}
+
+#first {
+	font-family: sans-serif;
+}
+
+#second {
+	color: #90251B;
+}
+
+.functions {
+	width: 75%;
+	text-align: center;
+	margin: auto;
+}

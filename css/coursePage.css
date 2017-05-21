@@ -1,0 +1,64 @@
+/*
+ Title: Course CSS Page
+ Author: Jon Coleman
+ Purpose: CSS for index page for N341
+ Created on: 1/10/17
+*/
+
+* {
+	margin:0 0 6px;;
+}
+
+header {
+	text-align:left;
+	color:white;
+	background-color:#144;
+	padding:30px 150px;
+}
+
+body {
+	background-color: #DDD;
+} 
+
+body p {
+	padding-left: 2em;
+}
+
+li, li a {
+	list-style: none;
+	background-color: #144;
+	text-align: center;
+	color: white;
+	border-radius: 3px;
+	padding: 2px;
+	text-decoration: none;
+}
+
+h2 {
+	width: 100%;
+	color: #333;
+	line-height: 40px;
+} 
+
+h3 {
+	color: #333;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 2px solid #000;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#assignments {
+	width: 720px;
+	margin: 0 auto;
+	box-shadow: 0 2px 15px #EEE;
+	min-height: 300px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: white;
+
+} #assignments ul {
+	float:left;
+	width: 300px;
+}
