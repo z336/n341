@@ -17,17 +17,20 @@ $(document).ready(function() {
         } 
 
         this.speak = function () {
-            this.elOutput.innerHTML += this.intFavoriteNumber;
+            this.elOutput.innerHTML += "<br>" + this.intFavoriteNumber;
         }
 
-    }
+    };
 
     var captainPirate = new Pirate ('Captain', 7, 'captain');
-    var firstMatePirate = new Pirate ('First Mate', 8, 'pirate');
-    var secondMatePirate = new Pirate ('Second Mate', 9, 'pirate');
-    var deckScrubberPirate = new Pirate ('Deck Scrubber', 4, 'pirate');
+    var firstMatePirate = new Pirate ('First Mate', 8, 'pirate1');
+    var secondMatePirate = new Pirate ('Second Mate', 9, 'pirate2');
+    var deckScrubberPirate = new Pirate ('Deck Scrubber', 4, 'pirate3');
     
-    
+    captainPirate.speak();
+    firstMatePirate.speak();
+    secondMatePirate.speak();
+    deckScrubberPirate.speak();
 
 });
 
