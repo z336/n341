@@ -43,5 +43,9 @@ $(document).ready(function() {
 
     captainPirate.speak("I chose " + captainPirate.intFavoriteNumber + "!");
 
-    
+    if (pirate guess === captain guess) {
+        captainPirate.speak("This number was it!");
+    } else {
+        captainPirate.speak("Ya'll don't know anything!");
+    }
 });
