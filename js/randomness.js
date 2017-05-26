@@ -41,11 +41,13 @@ $(document).ready(function() {
     deckScrubberPirate.randomNumber();
     deckScrubberPirate.speak("The bloody " + deckScrubberPirate.strRank + " chooses " + deckScrubberPirate.intFavoriteNumber + ".");
 
-    captainPirate.speak("I chose " + captainPirate.intFavoriteNumber + "!");
+    captainPirate.speak("I chose " + captainPirate.intFavoriteNumber + "! ");
 
-    if (pirate guess === captain guess) {
-        captainPirate.speak("This number was it!");
+
+    if (firstMatePirate.intFavoriteNumber, secondMatePirate.intFavoriteNumber, deckScrubberPirate.intFavoriteNumber === captainPirate.intFavoriteNumber) {
+        captainPirate.speak("This was it!");
     } else {
         captainPirate.speak("Ya'll don't know anything!");
     }
+
 });
