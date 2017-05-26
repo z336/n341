@@ -22,9 +22,31 @@ if (intCurrentLatitude <= intDestinationLatitude && intCurrentLongitude <= intDe
 } else if (intCurrentLatitude >= intDestinationLatitude && intCurrentLongitude <= intDestinationLongitude) {
 	document.getElementById("elseifs").textContent = "Head South East!";
 } else {
-	document.getElementById("elseifs").textContent = "Land ho!";
+	document.getElementById("elseifs").textContent = "Land Ho!";
 }
 
+	var msg;
+
+switch (true) {
+    case (intCurrentLatitude <= intDestinationLatitude && intCurrentLongitude <= intDestinationLongitude):
+    	msg = "Head North East!";
+        break;
+    case (intCurrentLatitude <= intDestinationLatitude && intCurrentLongitude >= intDestinationLongitude):
+        msg = "Head North West!";
+        break;
+    case (intCurrentLatitude >= intDestinationLatitude && intCurrentLongitude >= intDestinationLongitude):
+        msg = "Head South West!";
+        break;
+    case (intCurrentLatitude >= intDestinationLatitude && intCurrentLongitude <= intDestinationLongitude):
+        msg = "Head South East!";
+        break;
+    default:
+        msg = "Land Ho!";
+        break;
+}
+
+var el = document.getElementById("switch");
+el.textContent = msg;
 
 
 });
