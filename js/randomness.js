@@ -6,7 +6,8 @@
 ***************************************/
 $(document).ready(function() {
 
-    function Pirate (rank, favorite, id) { // Pirate object
+    // Pirate function
+    function Pirate (rank, favorite, id) { 
 
         this.strRank = rank;
         this.intFavoriteNumber = favorite;
@@ -22,13 +23,13 @@ $(document).ready(function() {
 
     };
 
-
-    var captainPirate = new Pirate ('Captain', 7, 'captain'); // Instantiate the pirates
+    // Instantiate the pirates
+    var captainPirate = new Pirate ('Captain', 7, 'captain'); 
     var firstMatePirate = new Pirate ('First Mate', 8, 'pirate1');
     var secondMatePirate = new Pirate ('Second Mate', 9, 'pirate2');
     var deckScrubberPirate = new Pirate ('Deck Scrubber', 4, 'pirate3');
 
-
+    // Guessing game
     captainPirate.speak("Hey, we're starting the game. Pick the right number to get me grog!" + "<br>");
     captainPirate.randomNumber();
     
@@ -41,7 +42,7 @@ $(document).ready(function() {
     deckScrubberPirate.randomNumber();
     deckScrubberPirate.speak("The bloody " + deckScrubberPirate.strRank + " chooses " + deckScrubberPirate.intFavoriteNumber + ".");
 
-    captainPirate.speak("I chose " + captainPirate.intFavoriteNumber + "! ");
+    captainPirate.speak("...I chose " + captainPirate.intFavoriteNumber + "! ");
 
 
     if (firstMatePirate.intFavoriteNumber, secondMatePirate.intFavoriteNumber, deckScrubberPirate.intFavoriteNumber === captainPirate.intFavoriteNumber) {
