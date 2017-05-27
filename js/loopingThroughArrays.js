@@ -7,15 +7,13 @@
 
 $(document).ready(function() {
 
-	var strCode = prompt("Give me yer code", "L");
+	var chrCharacter = prompt("Give me yer code", "L");
 
-	while (strCode.length !== 1) {
-		alert("too big");
-		strCode = prompt("Give me yer code", "L");
+	while (chrCharacter.length !== 1) {
+		alert("That ain't the code, it's one character!");
+		chrCharacter = prompt("Give me yer code", "L");
 	} 
-	document.getElementById("loop").textContent = "codessss";
-
-	        //Your code here
+	
 
         /*****          
         Purpose: Used to assign ascii value of the entered character to a variable          
@@ -44,6 +42,14 @@ $(document).ready(function() {
 
             return strBin;
         }
+
+ 
+
+
+
+
+document.getElementById("loop").textContent = "codes";
+
 
 });
 
