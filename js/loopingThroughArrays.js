@@ -7,11 +7,14 @@
 
 $(document).ready(function() {
 
+	alert("Hoist the secret message ye scurvy dawgs!");
+
 	var chrCharacter = prompt("Give me yer code", "L");
 
 	while (chrCharacter.length !== 1) {
 		alert("That ain't the code, it's one character!");
 		chrCharacter = prompt("Give me yer code", "L");
+		return chrCharacter;
 	} 
 	
 
@@ -26,7 +29,7 @@ $(document).ready(function() {
         }
 
         /*****          
-        Purpose: *** For full credit, describe the purpose of this function here ***            
+        Purpose: Convert ascii value to binary          
         Parameters: single integer representing an ascii value  
         Return: binary, base 2 representation of the number passed to this function
         *****/
@@ -43,12 +46,10 @@ $(document).ready(function() {
             return strBin;
         }
 
- 
-
-
-
-
-document.getElementById("loop").textContent = "codes";
+ function printBinary(strBin) {
+ 	var elementToAddTextTo = document.getElementById("loop").textContent;
+ 	elementToAddTextTo.textContent += strBin;
+ }
 
 
 });
