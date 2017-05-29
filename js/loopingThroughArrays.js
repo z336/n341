@@ -46,11 +46,9 @@ $(document).ready(function() {
             return strBin;
         }
 
- function printBinary(strBin) {
- 	var elementToAddTextTo = document.getElementById("loop").textContent;
- 	elementToAddTextTo.textContent += strBin;
- }
+    
+    var splitBinaryString = strBin.split("");
 
-
+    alert(splitBinaryString);
 });
 
