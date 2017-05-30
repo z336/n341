@@ -16,7 +16,6 @@ $(document).ready(function() {
 		chrCharacter = prompt("Give me yer code", "L");
 		return chrCharacter;
 	} 
-	
 
         /*****          
         Purpose: Used to assign ascii value of the entered character to a variable          
@@ -46,9 +45,15 @@ $(document).ready(function() {
             return strBin;
         }
 
-    
-    var splitBinaryString = strBin.split("");
+        function splitBinary() {
+        	var str = strBin;
+			var res = str.split(" ", 8);
 
-    alert(splitBinaryString);
+			
+			document.getElementById("loop").textContent = res;
+
+	}
+		    
+    
 });
 
