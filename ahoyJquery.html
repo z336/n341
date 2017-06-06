@@ -1,0 +1,32 @@
+<!doctype html>
+<!--
+    Filename: ahoyJquery.html
+    Written by: Jon Coleman
+    Purpose: jQuery Development Environment Setup
+    Date: 06/05/17
+-->
+<html lang="en">
+
+<head>
+    <title>jQuery Development Environment Setup</title>
+    <meta charset="utf-8">
+    <!-- Link to some stylesheet goes first -->
+    <link href="css/sails.css" rel="stylesheet" type="text/css">
+    <!-- Link to hosted jQuery library goes after css file but before local js file -->
+    <!-- Probable performance boost if at very bottom of file -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Link to js file specific to this html page goes below hosted library link -->
+    <script type="text/javascript" src="js/ahoyJquery.js"></script>
+</head>
+
+<body class="functions">
+    <div id="first"><img src="https://cdnb.artstation.com/p/assets/images/images/000/845/593/large/nikolay-razuev-ship3-s3.jpg?1434422939" style="width: 268px; height: 430px;"></div>
+    <p>
+        This paragraph tag exists so that I can play with it in jQuery
+    </p>
+    <button id="ahoy">.append</button>
+    <br/>
+    <button id="matey">.html</button>
+</body>
+
+</html>
